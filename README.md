@@ -8,8 +8,6 @@ A real-time cryptocurrency trade data pipeline built with Redpanda, ClickHouse, 
 
 **Data Flow**: `[Binance WS] -> [collector] -> [Redpanda] -> [processor] -> [ClickHouse] -> [FastAPI]`
 
-For a detailed architecture diagram and component descriptions, see [ARCHITECTURE.md](ARCHITECTURE.md).
-
 ## Quick Start
 
 ### Prerequisites
