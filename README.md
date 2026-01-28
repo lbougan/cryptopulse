@@ -1,6 +1,6 @@
-# CryptoPulse - Real-Time Crypto Trade Pipeline
+# CryptoPulse - Real-time crypto trade data pipeline
 
-A real-time cryptocurrency trade data pipeline built with Docker Compose, Redpanda, ClickHouse, and FastAPI.
+A real-time cryptocurrency trade data pipeline built with Redpanda, ClickHouse, and FastAPI.
 
 ## Architecture
 
@@ -232,14 +232,3 @@ docker compose exec processor wget -qO- http://localhost:8080/metrics
 - Wait a few minutes for candles to accumulate (1-minute intervals)
 - Check processor logs for errors
 - Verify data in ClickHouse directly
-
-## Next Steps
-
-See `BUILD_PLAN.md` for detailed step-by-step implementation guide.
-
-### Future Enhancements
-- Add more symbols (multi-symbol support)
-- Add schema registry
-- Add dbt transformations
-- Kubernetes deployment
-- Terraform infrastructure as code
